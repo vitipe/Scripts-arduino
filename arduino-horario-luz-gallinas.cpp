@@ -19,7 +19,7 @@ void loop () {
     float horas=hora+minuto/60.0;
 
     //condicion: >Domingo y  <sabado    y   >6.30pm  y <11.30pm
-    if(diaDeLaSemana>=0&&diaDeLaSemana<7 && horas>6.75&&horas<8.0 || horas>18.5&&horas<19.75)
+    if(diaDeLaSemana>=0&&diaDeLaSemana<7 && horas>7.0&&horas<7.5 || horas>19.25&&horas<19.75)
     {
       digitalWrite(12, HIGH);
       Serial.print("Salida digital 13 = ON");
