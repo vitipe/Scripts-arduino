@@ -18,7 +18,7 @@ void loop () {
     
     float horas=hora+minuto/60.0;
 
-    //condicion: >Domingo y  <sabado    y   >6.30pm  y <11.30pm
+    //condicion: Toda la semana,  entre las 7 y 7:30 y entre las 19:15 y 19:45 
     if(diaDeLaSemana>=0&&diaDeLaSemana<7 && horas>7.0&&horas<7.5 || horas>19.25&&horas<19.75)
     {
       digitalWrite(12, HIGH);
